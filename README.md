@@ -2,6 +2,36 @@
 
 ![Restaurant Logo](https://github.com/Oriakhi-Osariemen/Restaurant-Orders/blob/main/shutterstock_1678594945-1880x880-1.jpg)
 
+## Project Overview: Analyzing Restaurant Order Using Data Using SQL.
+This project conducts analysis on restaurant order, this includes insights on
+Highest prices, lowest prices, best selling categories, lowest selling categories 
+The objective is to derive insights and address key business questions based on the dataset. 
+Below, you’ll find a summary of the project’s purpose, challenges addressed, solutions implemented, insights uncovered. 
+
+## Objectives
+1. Explore menu_items_tables
+   - View the menu_items table
+   - Find the number of items on the menu
+   - What are the least and most expensive items on the menu
+   - How Many Italian dishes are on the menu
+   - What are the least and most expensive Italian dishes on the menu
+   - How many dishes are in each category
+   - What is the average dish price within each category
+
+2. Explore order_details table
+   - View the order_details table
+   - What is the date range of the table
+   - How many orders were made within this date range
+   - How many items were ordered within this date range
+   - Which orders had the most number of items
+   - How many orders had more than 12 items
+
+3. Analyze Customer Behaveior
+   - Combine the menu_items and order_details tables into a single table
+   - What were the least and most ordered items? What categories were they in
+   - What were the top 5 orders that spent the most money
+   - View the details of the highest spend order. What insights can you gather from the results
+   - View the details of the top 5 highest spend orders. What insights can you gather from results
 
 ## Objective 1: Explore menu_items_table
 1. View the menu_items table
@@ -28,8 +58,9 @@ SELECT COUNT(*) FROM menu_items
 WHERE category = 'Italian';
 ```
 
-```sql
+
 5. What are the least and most expensive Italian dishes on the menu
+```sql
 SELECT * 
 FROM menu_items
 WHERE category = 'Italian'
@@ -104,8 +135,7 @@ HAVING num_item > 12) AS num_orders;
 
 
 
-
-## Objective 3: Analyze Customer Behaveior;
+## Objective 3: Analyze Customer Behaveior
 
 1. Combine the menu_items and order_details tables into a single table.
 ```sql SELECT * 
