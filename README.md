@@ -1,7 +1,6 @@
 # Restaurant-Orders Using mySQL workbench
 
-
-
+![Restaurant Logo](https://github.com/Oriakhi-Osariemen/Restaurant-Orders/blob/main/shutterstock_1678594945-1880x880-1.jpg)
 
 
 ## Objective 1: Explore menu_items_table
